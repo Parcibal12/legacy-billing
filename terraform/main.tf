@@ -48,5 +48,7 @@ module "compute" {
 
               # Iniciar la aplicacion levantando el servicio en segundo plano
               nohup npm start > app.log 2>&1 &
+
+              # COMENTARIO PARA FORZAR RECREACION DEL SERVIDOR V2
               EOF
 }
