@@ -1,0 +1,26 @@
+Run npm run test
+
+> legacy-billing@1.0.0 test
+> jest
+
+  console.log
+    === Ejecutando Pruebas Unitarias de Facturación ===
+
+      at Object.log (Test/app.test.js:1:9)
+
+  console.log
+    ✅ PASSED: El cálculo del impuesto de la factura es correcto.
+
+      at Object.log (Test/app.test.js:5:13)
+
+  ●  process.exit called with "0"
+
+      4 | if (totalFactura > 0) {
+      5 |     console.log("✅ PASSED: El cálculo del impuesto de la factura es correcto.");
+    > 6 |     process.exit(0); 
+        |             ^
+      7 | } else {
+      8 |     console.error("❌ FAILED: La factura no puede ser menor o igual a cero.");
+      9 |     process.exit(1); 
+
+      at Object.exit (Test/app.test.js:6:13)

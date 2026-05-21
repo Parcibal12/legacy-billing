@@ -1,0 +1,5 @@
+  backend "s3" {
+    bucket = "tf-backend-legacy-billing-irigoyen"
+    key    = "legacy-billing/terraform.tfstate"
+    region = "us-east-1"
+  }
