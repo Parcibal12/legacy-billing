@@ -4,8 +4,7 @@ Este repositorio contiene la infraestructura y el pipeline de despliegue automat
 
 ## Validación en Vivo (URL de la Aplicación)
 La aplicación se encuentra desplegada y funcionando en la siguiente dirección:
-**http://100.54.108.164:3000**
-
+**http://54.145.9.227:3000**
 ## Arquitectura CI/CD implementada
 
 La solución utiliza principios de GitOps para automatizar todo el ciclo de vida de la aplicación:
