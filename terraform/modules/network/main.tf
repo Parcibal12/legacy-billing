@@ -7,7 +7,7 @@ resource "aws_security_group" "sg_app" {
     from_port   = var.app_port
     to_port     = var.app_port
     protocol    = "tcp"
-    cidr_blocks = ["190.104.20.154/32"]
+    cidr_blocks = ["0.0.0.0/0"]  # <-- Volvemos a abrirlo para que no haya bloqueos de IP
   }
 
   ingress {
@@ -15,7 +15,7 @@ resource "aws_security_group" "sg_app" {
     from_port   = 22
     to_port     = 22
     protocol    = "tcp"
-    cidr_blocks = ["190.104.20.154/32"]
+    cidr_blocks = ["190.104.20.154/32"] # <-- Dejamos la seguridad estricta para el SSH
   }
 
   egress {
